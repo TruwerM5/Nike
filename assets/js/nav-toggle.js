@@ -1,6 +1,6 @@
 let toggler = document.querySelector('[data-toggler]');
 let nav = document.querySelector('[data-nav]');
-let navLinks = document.querySelectorAll('.nav-link');
+let navLinks = document.querySelectorAll('[data-nav] a');
 
 
 toggler.addEventListener('click', (e) => {

@@ -14,7 +14,7 @@
 body {
     font-family: 'Montserrat', sans-serif;
     --gray-color: #A0A0A0;
-    height: 200vh;
+    height: 300vh;
     max-width: 1400px;
     min-width: 300px;
     margin: 0 auto;
@@ -235,6 +235,8 @@ ul {
 .never-done {
     margin-top: 65px;
 }
+
+
 .never-done .column {
     min-height: 165px;
     width: 100%;
@@ -284,22 +286,25 @@ ul {
     padding: 30px;
     margin-top: -60px;
 }
-.new-products .flex-column {
+.new-products .row.flex-column {
     gap: 40px;
+    justify-content: stretch;
+    align-items: stretch;
 }
 
 .new-products .column {
     position: relative;
-    height: 140px;
+    height: 135px;
 }
 .product-item {
+    height: 100%;
     background-color: #EFEFEF;
     padding: 30px 0 14px 33px;
     border-radius: 18px;
-    height: 140px;
     box-shadow: 5px 5px 25px rgba(0, 0, 0, 0.25);
 }
-.product-item > * {
+ 
+.new-products .product-item > * {
     flex: 1;
 }
 .product-item .product-img {
@@ -314,13 +319,15 @@ ul {
     top: -80px;
     left: -50px;
 }
-
+.product-item .product-link {
+    height: 100%;
+    justify-content: space-between;
+}
 .product-item h4 {
     font-size: 1rem;
     font-style: italic;
     color: #FF3939;
     text-transform: uppercase;
-    margin-bottom: 5px;
 }
 
 .product-item p {
@@ -331,14 +338,12 @@ ul {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 16px;
     width: 25px;
     height: 25px;
     border-radius: 50%;
     padding: 7px;
     background-color: #FFF;
-    margin-left: auto;
-    margin-right: auto;
+    align-self: center;
 }
 /* NEW PRODUCT END */
 
@@ -373,4 +378,56 @@ ul {
 .carousel-header button img {
     width: 100%;
 }
+
+.carousel-content {
+    height: 360px;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.carousel__inner {
+    position: absolute;
+    gap: 30px;
+    transform: translateX(-50%);
+    margin-left: 50%;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel__inner .carousel-item {
+    background-color: #EFEFEF;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.25);
+    border-radius: 18px;
+    padding: 25px;
+    width: 170px;
+    text-align: center;
+}
+
+.carousel-item .carousel-product, .carousel-product-link {
+    height: 100%;
+    position: relative;
+}
+
+.carousel-product-link {
+    justify-content: center;
+    gap: 20px;
+}
+
+.carousel-item img {
+    width: 100%;
+    
+}
+.carousel-item.scaled {
+    height: 336px;
+    width: 240px;
+}
+
+.carousel-item.scaled .carousel-product-link{
+    gap: 35px;
+}
+.carousel-item.scaled  img{
+    transform: scale(1.2);
+}
+
 /* CAROUSEL END */
