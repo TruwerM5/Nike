@@ -406,8 +406,10 @@ ul {
     border-radius: 18px;
     padding: 25px;
     width: 170px;
+    height: 238px;
     text-align: center;
 }
+
 
 .carousel-item .carousel-product, .carousel-product-link {
     height: 100%;
