@@ -38,6 +38,12 @@ button:hover {
 ul {
     list-style: none;
 }
+
+.container {
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
 .flex {
     display: flex;
 }
@@ -53,6 +59,9 @@ ul {
     text-transform: uppercase;
 }
 
+.margin-top-50 {
+    margin-top: 50px;
+}
 
 .fw-900 {
     font-weight: 900;
@@ -352,9 +361,6 @@ ul {
 
 
 /* CAROUSEL */
-.carousel {
-    margin-top: 50px;
-}
 
 .carousel-header {
     padding: 0 20px;
@@ -463,3 +469,38 @@ ul {
     transform: scale(1.4);
 }
 /* CAROUSEL END */
+
+
+/* BUY BY CATEGORY */
+.categories .categories-content {
+    margin-top: 20px;
+}
+.categories .row.relative {
+    position: relative;
+    height: 330px;
+}
+
+.categories .row .column {
+    height: 100%;
+}
+.categories .bg-gif {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    background-position: center;
+    background-size: cover;
+    z-index: -1;
+}
+
+.category-text-container {
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.category-text-container .category-text {
+    font-size: 2.5rem;
+    letter-spacing: 0.3em;
+}
+/* BUY BY CATEGORY END */
