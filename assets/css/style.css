@@ -480,9 +480,7 @@ ul {
     height: 330px;
 }
 
-.categories .row .column {
-    height: 100%;
-}
+
 .categories .bg-gif {
     position: absolute;
     width: 100%;
@@ -494,7 +492,9 @@ ul {
 }
 
 .category-text-container {
+    position: absolute;
     height: 100%;
+    width: 100%;
     justify-content: center;
     align-items: center;
 }
@@ -504,3 +504,13 @@ ul {
     letter-spacing: 0.3em;
 }
 /* BUY BY CATEGORY END */
+
+/* GOODS */
+.goods .text-left {
+    text-align: left;
+}
+
+.goods .text-right {
+    text-align: right;
+}
+/* GOODS END */
