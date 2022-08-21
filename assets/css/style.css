@@ -156,6 +156,10 @@ ul {
     position: relative;
 }
 
+.purchases-desktop {
+    display: none;
+}
+
 .header__inner {
     position: fixed;
     left: 0;
@@ -167,12 +171,39 @@ ul {
     padding: 20px;
     background-color: #fff;
     z-index: 1;
+
 }
+@media screen and (min-width: 48em) {
+    .header__inner {
+        height: 80px;
+        display: flex;
+        flex-direction: row-reverse;
+        padding: 20px 50px;
+    }
+    .header__inner > * {
+        flex: 1;
+    }
+    a.purchases {
+        display: none;
+    }
+    .purchases-desktop {
+        display: block;
+        order: -1;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+}
+
 .header-head {
     align-items: center;
     justify-content: space-between;
 }
-
+@media screen and (min-width: 48em) {
+    .header-head {
+        justify-content: center;
+    }
+}
 .nav-toggler {
     background-color: transparent;
     width: 1.5em;
@@ -181,7 +212,11 @@ ul {
     flex-direction: column;
     justify-content: space-between;
 }
-
+@media screen and (min-width: 48em) {
+    .nav-toggler {
+        display: none;
+    }
+}
 .nav-toggler span {
     width: 100%;
     height: 2px;
@@ -199,7 +234,11 @@ ul {
     color: var(--gray-color);
     letter-spacing: 3px;
 }
-
+@media screen and (min-width: 48em) {
+    .logo {
+        font-size: 2rem;
+    }
+}
 .logo .sneaker {
     font-weight: 700;
 }
@@ -220,13 +259,34 @@ ul {
     padding: 50px 0;
     height: 100vh;
 }
-
+@media screen and (min-width: 48em) {
+    .navbar {
+        visibility: visible;
+        margin-top: 0;
+        padding: 0;
+        height: auto;
+        width: max-content;
+    }
+    .navbar > * {
+        margin-top: 0;
+        opacity: 1;
+    }
+    .navbar.active {
+        height: auto;
+        padding: 0;
+    }
+}
 .navbar > * {
     margin-top: -50px;
     opacity: 0;
     transition: margin-top .3s linear, opacity .3s linear;
 }
-
+@media screen and (min-width: 48em) {
+    .navbar > * {
+        opacity: 1;
+        margin-top: 0;
+    }
+}
 .navbar.active > * {
     margin-top: 0;
     opacity: 1;
@@ -235,6 +295,11 @@ ul {
 .extra {
     gap: 30px;
     margin-bottom: 50px;
+}
+@media screen and (min-width: 48em) {
+    .extra {
+        display: none;
+    }
 }
 .extra a {
     color: var(--gray-color);
@@ -247,15 +312,39 @@ ul {
 .navbar .navbar-list {
     margin-bottom: 80px;
 }
-.navbar .nav-item {
+@media screen and (min-width: 48em) {
+    .navbar .navbar-list {
+        margin-bottom: 0;
+        display: flex;
+        align-items: center;
+        height: 100%;
+        width: max-content;
+    }
+}
 
+.navbar .nav-item {
     margin-bottom: 20px;
+}
+@media screen and (min-width: 48em) {
+    .navbar .nav-item {
+        margin-bottom: 0;
+    }
+    .navbar .nav-item:not(:first-child) {
+        margin-left: 3.125em;
+    }
+    .navbar .nav-item.secondary {
+        display: none;
+    }
 }
 .navbar .nav-item .nav-link {
     display: inline;
     padding-bottom: 10px;
 }
-
+@media screen and (min-width: 48em) {
+    .navbar .nav-item .nav-link {
+        font-size: 1.25rem;
+    }
+}
 .navbar .nav-item .nav-link.active {
     font-weight: 700;
     position: relative;
@@ -271,9 +360,13 @@ ul {
     background-color: #000;
     border-radius: 10px;
 }
-
 .navbar div.brand {
     justify-content: center;
+}
+@media screen and (min-width: 48em) {
+    .navbar div.brand {
+        display: none;
+    }
 }
 /* HEADER END */
 
