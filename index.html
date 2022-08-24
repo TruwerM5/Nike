@@ -45,16 +45,16 @@
     </header>
     <main>
         <div class="never-done">
-            <div class="row flex-column">
+            <div class="row flex-column row-reverse">
                 <div class="column bg-img" style="background-image: url('assets/images/column-bg-img1.jpg');"></div>
                 <div class="column bg-img" style="background-image: url('assets/images/column-bg-img2.jpg');">
-                    <div class="main-title flex-column">
+                    <div class="main-title flex-column container">
                         <h2 class="white font-16 italic fw-900">we are never done</h2>
                         <p class="white font-12 fw-900" style="text-align: justify;">
                             Celebrating 50 years of Nike from May 16th!
                             Exclusive products, experiences and much more await you for five days. Scan and join the Nike app!
                         </p>
-                        <button class="button bg-white black">Celebrate with us!</button>
+                        <button class="button bg-white black font-10">Celebrate with us!</button>
                     </div>
                 </div>
             </div>
@@ -73,7 +73,7 @@
                         <figure class="product-item flex">
                             <figcaption class="product-title">
                                 <a href="#" class="product-link flex-column">
-                                    <h4 class="uppercase font-16 italic">new</h4>
+                                    <h4 class="uppercase font-16 italic new">new</h4>
                                     <p class="font-12">AIR JORDAN 1 MID LIGHT SMOKE GREY</p>
                                     <div class="arrow-container"><img src="assets/images/arrow-link.svg" alt="arrow" class="arrow-link"></div>
                                 </a>
@@ -87,7 +87,7 @@
                         <figure class="product-item flex">
                             <figcaption class="product-title uppercase">
                                 <a href="#" class="product-link flex-column">
-                                    <h4 class="uppercase font-16 italic">new</h4>
+                                    <h4 class="uppercase font-16 italic new">new</h4>
                                     <p class="font-12">Air Max 200 SE</p>
                                     <div class="arrow-container"><img src="assets/images/arrow-link.svg" alt="arrow" class="arrow-link"></div>
                                 </a>
@@ -100,22 +100,22 @@
             </div>
         </div>
         <div class="subtitle text-center margin-top-50">
-            <span>At the moment</span>
-            <h2 class="uppercase fw-900 italic font-24">summertime mood</h2>
-            <span>Fight the heat in a sunny look!</span>
+            <span class="font-16">At the moment</span>
+            <h2 class="uppercase fw-900 italic font-24 summertime">summertime mood</h2>
+            <span class="font-16">Fight the heat in a sunny look!</span>
         </div>
         <div class="carousel margin-top-50">
             <div class="carousel-header flex container">
                 <div class="carousel-title">
                     <h6 class="fw-700 font-16">Top sneakers</h6>
                 </div>
-                <div class="carousel-buttons">
+                <div class="carousel-buttons flex">
                     <button class="carousel-button prev" data-carousel-prev><img src="assets/images/carousel-arrow.svg" alt="arrow" class="reverse-arrow"></button>
                     <button class="carousel-button next" data-carousel-next><img src="assets/images/carousel-arrow.svg" alt="arrow"></button>
                 </div>
             </div>
             <div class="carousel-content">
-                <div class="carousel__inner flex">
+                <div class="carousel__inner flex row">
                     <div class="carousel-item">
                         <figure class="carousel-product">
                             <span class="bg-title">NIKE</span>
@@ -126,7 +126,7 @@
                                 <img src="assets/images/react-presto.png" alt="react-presto">
                                 <figcaption class="work-sans carousel-figcaption flex-column">
                                     <h6 class="carousel-product-name fw-700 font-16">React Presto</h6>
-                                    <span class="carousel-product-price">$20.99</span>
+                                    <span class="carousel-product-price font-12">$20.99</span>
                                 </figcaption>
                             </a>
                         </figure>
@@ -141,7 +141,7 @@
                                 <img src="assets/images/air-max-97.png" alt="air max 97">
                                 <figcaption class="work-sans carousel-figcaption flex-column">
                                     <h6 class="carousel-product-name fw-700 font-16">Air Max 97</h6>
-                                    <span class="carousel-product-price">$20.99</span>
+                                    <span class="carousel-product-price font-12">$20.99</span>
                                 </figcaption>
                             </a>
                         </figure>
@@ -156,7 +156,7 @@
                                 <img src="assets/images/kd13ep.png" alt="kd13ep">
                                 <figcaption class="work-sans carousel-figcaption flex-column">
                                     <h6 class="carousel-product-name fw-700 font-16">KD13 EP</h6>
-                                    <span class="carousel-product-price">$20.99</span>
+                                    <span class="carousel-product-price font-12">$20.99</span>
                                 </figcaption>
                             </a>
                         </figure>
@@ -179,7 +179,7 @@
                         <div class="bg-img bg-gif" style="background-image: url('assets/images/category-workout.gif');"></div>
                     </div>
                 </div>
-                <div class="row relative">
+                <div class="row relative row-reverse">
                     <div class="column">
                         <div class="category-text-container flex">
                             <h4 class="category-text uppercase italic white">run</h4>
@@ -202,9 +202,9 @@
             </div>
         </div>
         <div class="goods container margin-top-50 flex-column">
-            <p class="goods-title uppercase italic font-24 fw-900 text-left">looks good.</p>
-            <p class="goods-title uppercase italic font-24 fw-900 text-center">runs good.</p>
-            <p class="goods-title uppercase italic font-24 fw-900 text-right">feels good.</p>
+            <p class="goods-title uppercase italic font-24 fw-900 text-left">looks good. </p>
+            <p class="goods-title uppercase italic font-24 fw-900 text-center">runs good. </p>
+            <p class="goods-title uppercase italic font-24 fw-900 text-right">feels good. </p>
         </div>
         <div class="discounts margin-top-50 padding-30">
             <div class="row flex-column products-item-container">
@@ -212,7 +212,7 @@
                     <figure class="product-item flex">
                         <figcaption class="product-title">
                             <a href="#" class="product-link flex-column">
-                                <h4 class="discount font-16 italic">-20% Discount</h4>
+                                <h4 class="discount font-16 italic"><span class="percents">-20%</span> Discount</h4>
                                 <p class="font-12">on your first purchase</p>
                                 <div class="arrow-container"><img src="assets/images/arrow-link.svg" alt="arrow" class="arrow-link"></div>
                             </a>
@@ -226,7 +226,7 @@
                     <figure class="product-item flex">
                         <figcaption class="product-title">
                             <a href="#" class="product-link flex-column">
-                                <h4 class="discount font-16 italic">-20% Discount</h4>
+                                <h4 class="discount font-16 italic"><span class="percents">-20%</span> Discount</h4>
                                 <p class="font-12">on your first purchase</p>
                                 <div class="arrow-container"><img src="assets/images/arrow-link.svg" alt="arrow" class="arrow-link"></div>
                             </a>
@@ -247,7 +247,7 @@
             <div class="bg-img container" style="background-image: url('assets/images/footer-background.jpg');">
                 <h2 class="font-16 italic uppercase white">Your Nike <br> membership</h2>
                 <p class="font-12 white">Join our members and show your love with <br> <strong class="white">Nike By You!</strong></p>
-                <button class="button bg-white footer-button">Join Us</button>
+                <button class="button bg-white footer-button font-10">Join Us</button>
             </div>
             <div class="black-bg container white uppercase text-center">
                 <div class="flex footer-nav-container">
