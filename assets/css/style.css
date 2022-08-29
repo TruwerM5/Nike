@@ -532,7 +532,7 @@ ul {
     height: 180px;
     object-fit: cover;
     top: -80px;
-    left: -40px;
+    left: -50px;
 }
 
 @media screen and (min-width: 48em) {
